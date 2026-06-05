@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "pptx-editor": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["-m", "mcp_pptx_server"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

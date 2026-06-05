@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-pptx-server"
+version = "0.1.0"
+description = "MCP server for creating and editing .pptx presentations"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "python-pptx>=0.6.23",
+    "Pillow>=10.0.0",
+]
+
+[project.scripts]
+mcp-pptx = "mcp_pptx_server.server:main"
+
+[tool.setuptools.packages.find]
+include = ["mcp_pptx_server*"]

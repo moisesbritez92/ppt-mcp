@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.vscode/*
+!.vscode/mcp.json
+*.pptx
+*.ppt
+dist/
+build/
+*.egg-info/
+plan.txt
